@@ -50,18 +50,17 @@
             </p>
           </div>
           <div className="col" >
-            <form id="contactForm" name="contact" onSubmit1={this.handleSubmit} method="POST"  data-netlify="true" data-netlify-honeypot="bot-field" >
-             <label> <input type="text" name="name" size="40" aria-required="true" placeholder="Name*" data-validation-regexp="^([a-zA-Z ]+)$" /> </label>
-              {errorName && <span className="errorspan" id="errorName">Name cannot be blank</span>}
-             <label> <input type="text" name="email" size="40" aria-required="true" placeholder="Email*" data-validation="email" /></label>
-              {errorMail && <span className="errorspan" id="errorMail">Please enter a valid email</span>}
+            
+            <form name="contact"  method="POST"  data-netlify="true"  >
+             <label> <input type="text" name="name" size="40" placeholder="Name*"  /> </label>
+             
+             <label> <input type="text" name="email" size="40"  placeholder="Email*"/></label>
+              
               <label><textarea name="message" cols="40" rows="10" placeholder="Message*" ></textarea></label>
-              {errorMessage && <span className="errorspan" id="errorMessage">Please enter a message.</span>}
-              <input type="hidden" name="form-name" value="BeyondDesignsContact" />
+             
+   
               <button type="submit" value="Submit">submit</button>
-              {success && <div className="message text-success">Thanks!  We’ve received your information. We’ll be in contact with you soon.</div>}
-              {error && <div className="message text-danger">Sorry! Some error occured, please mail to<a href="mailto:contact.beyonddesigns@gmail.com" rarget="_blank">contact.beyonddesigns@gmail.com</a></div>}
-            </form>
+                 </form>
 
           </div>
         </div>
