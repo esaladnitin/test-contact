@@ -62,7 +62,15 @@ form button{
   outline: 0;
   border: none;
   margin-top: 2em;
-}</style>
+}
+    .errorspan{
+  left:0;
+  position: absolute;
+  margin-top: -2em;
+  font-size: small;
+  color: #824c4b;
+}
+  </style>
 
 <body>
 <!--   <h1>Contact</h1>
@@ -126,11 +134,11 @@ form button{
   
  <form name="contact"  method="POST"  data-netlify="true" >
              <input type="text" name="name"  placeholder="Name*"/> 
-              {errorName && <span className="errorspan" id="errorName">Name cannot be blank</span>}
+             <span className="errorspan" id="errorName">Name cannot be blank</span>
              <input type="text" name="email"   placeholder="Email*"  />
-              {errorMail && <span className="errorspan" id="errorMail">Please enter a valid email</span>}
+              <span className="errorspan" id="errorMail">Please enter a valid email</span>
            <textarea name="message" placeholder="Message*" ></textarea>
-              {errorMessage && <span className="errorspan" id="errorMessage">Please enter a message.</span>}
+              <span className="errorspan" id="errorMessage">Please enter a message.</span>
         
               <button type="submit" >submit</button>
              
