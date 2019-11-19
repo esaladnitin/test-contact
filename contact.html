@@ -10,8 +10,8 @@
 
 <body>
   <h1>Contact</h1>
-  <form name="contact" method="post"  data-netlify="true" data-netlify-honeypot="bot-field">
-    <input type="hidden" name="form-name" value="contact" />
+  <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" />
     <p hidden>
       <label>
         Don’t fill this out: <input name="bot-field" />
@@ -35,12 +35,13 @@
       <label>
         Message:
         <br />
-        <textarea name="message" />
-        </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+        <textarea name="message"></textarea>
+      </label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
 </body>
+
 </html>
