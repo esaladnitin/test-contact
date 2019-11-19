@@ -121,11 +121,13 @@ form button{
           <div className="col" >
             
             <form name="contact"  method="POST"  data-netlify="true"  >
-             <input type="text" name="name" placeholder="Name*"  />
+             <input type="text" name="name" placeholder="Name*"  /> 
+              <input type="hidden" name="form-name"   value="contact1" />
              
              <input type="text" name="email" placeholder="Email*"/>
               
             <textarea class="comment" name="message" placeholder="Message*" ></textarea>
+              
              
    
               <button type="submit" value="Submit">submit</button>
