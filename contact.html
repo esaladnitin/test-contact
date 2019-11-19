@@ -11,6 +11,10 @@
     form{
   position: relative;
 }
+.comment {
+  width: 40em;
+  height: 10em;
+}
 form textarea,
 form input{
   display: block;
@@ -30,6 +34,7 @@ form input{
   box-sizing: border-box;
   transition: border-color .2s ease-in-out;
 }
+    
 form textarea:focus,
 form input:focus{
   border-color: #fff;
@@ -120,7 +125,7 @@ form button{
              
              <input type="text" name="email" placeholder="Email*"/>
               
-            <textarea name="message" placeholder="Message*" ></textarea>
+            <textarea class="comment" name="message" placeholder="Message*" ></textarea>
              
    
               <button type="submit" value="Submit">submit</button>
