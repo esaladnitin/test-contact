@@ -31,7 +31,7 @@
   
 </form> -->
   
-  <h2>Find Us</h2>
+<!--   <h2>Find Us</h2>
         {loading && <div className="preloader contact"><div>Loading...</div></div>}
         <div className="row padded">
           <div className="col">
@@ -63,9 +63,24 @@
                  </form>
 
           </div>
-        </div>
+        </div> -->
 
 
+  
+  
+  
+   <form name="contact"  method="POST"  data-netlify="true"  >
+             <label> <input type="text" name="name"  placeholder="Name*" /> </label>
+              <span className="errorspan" id="errorName">Name cannot be blank</span>
+             <label> <input type="text" name="email" placeholder="Email*" data-validation="email" /></label>
+              <span className="errorspan" id="errorMail">Please enter a valid email</span>
+              <label><textarea name="message"  placeholder="Message*" ></textarea></label>
+             <span className="errorspan" id="errorMessage">Please enter a message.</span>
+              <input type="hidden" name="form-name" value="BeyondDesignsContact" />
+              <button type="submit" >submit</button>
+             <div className="message text-danger">Sorry! Some error occured, please mail to<a href="mailto:contact.beyonddesigns@gmail.com" rarget="_blank">contact.beyonddesigns@gmail.com</a></div>
+            </form>
+  
 </body>
 
 </html>
